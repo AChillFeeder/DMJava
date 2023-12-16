@@ -14,7 +14,7 @@
     <properties>
         <property name="hibernate.archive.autodetection" value="" />
         <property name="hibernate.hbm2ddl.auto" value="update"/>
-<!--        <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>-->
+        <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
         <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://bdbtxjve5aqq4esqtv2w-mysql.services.clever-cloud.com:3306/bdbtxjve5aqq4esqtv2w"/>
         <property name="jakarta.persistence.jdbc.user" value="upn3fggburymr4x0"/>
         <property name="jakarta.persistence.jdbc.password" value="64q3BJCIsP7aRCPj3AeJ"/>

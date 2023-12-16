@@ -1,15 +1,11 @@
 package fr.sdvnte.m12324;
 
 import fr.sdvnte.m12324.entities.*;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.EntityTransaction;
-import jakarta.persistence.Persistence;
+import jakarta.persistence.*;
 
+import java.sql.ResultSet;
 import java.time.LocalDate;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,18 +16,32 @@ public class Main {
             EntityTransaction entityTransaction = entityManager.getTransaction();
             entityTransaction.begin();
 
-//            Créer une addresse
-            Address address = new Address();
-            address.setNumber("1");
-            address.setStreet("rue");
-            address.setCity("Ville");
-            address.setZipCode("00000");
+//            Créer 3 addresses
+            // Créer 3 petstores
 
-//            Créer un petStore
-            PetStore petStore = new PetStore("nom_store1", "nom_manager1", new HashSet<Product>(), address, new HashSet<Animal>());
+            Address address = null;
+            PetStore petStore = null;
+            for (int i = 0; i < 4; i++) {
+                address = new Address();
+                address.setNumber(Integer.toString(i));
+                address.setStreet("rue");
+                address.setCity("Ville");
+                address.setZipCode("00000");
 
-//            Création d'un animal à travers la classe mère
+                entityManager.persist(address);
+
+                petStore = new PetStore("nom_store"+Integer.toString(i)
+                        , "nom_manager"+Integer.toString(i)
+                        , new HashSet<Product>()
+                        , address, new HashSet<Animal>());
+
+                entityManager.persist(petStore);
+            }
+
+            // Création d'un animal à travers la classe mère
+            // Créer 3 animaux
             Animal animal = new Animal(LocalDate.now(), "rouge", petStore);
+            entityManager.persist(animal);
 
 //            Création d'un chat
             Cat chat = new Cat();
@@ -40,16 +50,36 @@ public class Main {
             chat.setPetStore(petStore);
             chat.setChipId("chipID123");
 
-//            Création d'un produit
+            entityManager.persist(chat);
+
+            // Création d'un poisson
+            Fish poisson = new Fish();
+            poisson.setBirth(LocalDate.now());
+            poisson.setCouleur("bleu");
+            poisson.setPetStore(petStore);
+            poisson.setLivingEnv(FishLivEnv.FRESH_WATER);
+
+            entityManager.persist(poisson);
+
+            // Création d'un produit
             Set petStoresOfProduct001 = new HashSet<PetStore>();
             petStoresOfProduct001.add(petStore);
-            Product product = new Product("001", "Le produit 1", ProdType.FOOD, 1, petStoresOfProduct001);
+            Product product = null;
+            for (int i = 0; i < 4; i++) {
+                product = new Product("00"+Integer.toString(i), "Le produit "+Integer.toString(i), ProdType.FOOD, 1, petStoresOfProduct001);
+                ;
+                entityManager.persist(product);
+            }
 
-            entityManager.persist(address);
-            entityManager.persist(petStore);
-            entityManager.persist(animal);
-            entityManager.persist(chat);
-            entityManager.persist(product);
+            // rechercher les animaux d'une animalerie
+            String jpql = "SELECT a FROM Animal a WHERE a.petStore = :petStore";
+            Query query = entityManager.createQuery(jpql);
+            query.setParameter("petStore", petStore);
+
+            List<Animal> resultList = query.getResultList();
+            for(Animal animal1 : resultList){
+                System.out.println(animal1.toString());
+            }
 
             entityTransaction.commit();
         }

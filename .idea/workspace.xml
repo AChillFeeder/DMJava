@@ -5,25 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4402a39-08d7-4c7a-896d-c2bb4efbb5dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/SecondBatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/Fish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/FishLivEnv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/PetStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/ProdType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/SecondBatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/Fish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702538432193</updated>
       <workItem from="1702538433248" duration="237000" />
-      <workItem from="1702539043887" duration="14653000" />
+      <workItem from="1702539043887" duration="19112000" />
     </task>
     <servers />
   </component>

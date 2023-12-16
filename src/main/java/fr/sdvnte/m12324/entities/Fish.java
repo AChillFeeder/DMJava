@@ -5,5 +5,15 @@ import jakarta.persistence.*;
 
 @Entity
 public class Fish extends Animal {
+    public FishLivEnv getLivingEnv() {
+        return livingEnv;
+    }
+
+    public void setLivingEnv(FishLivEnv livingEnv) {
+        this.livingEnv = livingEnv;
+    }
+
     private FishLivEnv livingEnv;
+
+
 }

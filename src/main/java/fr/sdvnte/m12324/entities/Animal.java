@@ -28,6 +28,16 @@ public class Animal {
         this.petStore = petStore;
     }
 
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "ID=" + ID +
+                ", birth=" + birth +
+                ", couleur='" + couleur + '\'' +
+                ", petStore=" + petStore +
+                '}';
+    }
+
     public long getID() {
         return ID;
     }
