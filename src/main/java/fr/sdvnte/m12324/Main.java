@@ -77,8 +77,13 @@ public class Main {
             query.setParameter("petStore", petStore);
 
             List<Animal> resultList = query.getResultList();
-            for(Animal animal1 : resultList){
-                System.out.println(animal1.toString());
+            System.out.println("Résultats: ");
+            if (resultList.isEmpty()){
+                System.out.println("Aucun enregistrement");
+            } else {
+                for(Animal animal1 : resultList){
+                    System.out.println(animal1.toString());
+                }
             }
 
             entityTransaction.commit();

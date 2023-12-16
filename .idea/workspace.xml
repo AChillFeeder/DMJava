@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b4402a39-08d7-4c7a-896d-c2bb4efbb5dc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/SecondBatch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/Fish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/sdvnte/m12324/entities/Fish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +28,9 @@
   <component name="KubernetesApiProvider"><![CDATA[{
   "isMigrated": true
 }]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -111,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702538432193</updated>
       <workItem from="1702538433248" duration="237000" />
-      <workItem from="1702539043887" duration="19112000" />
+      <workItem from="1702539043887" duration="20020000" />
     </task>
     <servers />
   </component>
